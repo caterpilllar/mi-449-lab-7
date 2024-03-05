@@ -3,5 +3,10 @@ layout: layout.liquid
 title: 11ty Boilerplate
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<div x-data = "{pic: $fetchjson('https://dummyjson.com/products/2', jsonItem1='thumbnail')}">
+    <img alt="thumbnail" x-bind:src="pic"/>
+</div>
+
+<div x-data = "{t: $fetchjson('https://dummyjson.com/products/2', jsonItem2='title')}">
+    <h1 x-text="t"></h1>
+</div>
