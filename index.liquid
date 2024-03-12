@@ -1,12 +1,14 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: MI 449 Lab 7
 ---
 
+<div class="text-blue-600 bg-green-200">
 <div x-data = "{pic: $fetchjson('https://dummyjson.com/products/2', jsonItem1='thumbnail')}">
     <img alt="thumbnail" x-bind:src="pic"/>
 </div>
 
 <div x-data = "{t: $fetchjson('https://dummyjson.com/products/2', jsonItem2='title')}">
-    <h1 x-text="t"></h1>
+    <h1 class="font-mono bg-blue-100" x-text="t"></h1>
+</div>
 </div>
